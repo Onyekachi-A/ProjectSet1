@@ -1,0 +1,28 @@
+import java.util.*;
+public class DoArithmetic {
+
+	static Scanner keyboard = new Scanner(System.in);
+	
+	public static void main(String[]args)
+	{
+	System.out.print("Enter the two operands: ");
+		
+	int operand1 = keyboard.nextInt();
+	int operand2 = keyboard.nextInt();
+			
+	//display input
+	int addition = operand1 + operand2;
+	int subtraction = operand1 - operand2;
+	int multiplication = operand1 * operand2;
+	int division = operand1 / operand2;
+	int modulus = operand1 % operand2;
+			
+	//display output
+	System.out.printf("%d + %d = %d\n", operand1, operand2, addition);
+	System.out.printf("%d - %d = %d\n", operand1, operand2, subtraction);
+	System.out.printf("%d * %d = %d\n", operand1, operand2, multiplication);
+	System.out.printf("%d / %d = %d\n", operand1, operand2, division);
+	System.out.printf("%d %% %d = %d\n", operand1, operand2, modulus);				
+	}
+	
+}

@@ -1,0 +1,32 @@
+import java.util.*;
+public class GetUserinfo
+{
+static Scanner keyboard = new Scanner(System.in);
+public static void main(String[]args) {
+
+  int ageOfUser;
+  String firstName;
+  String lastName;
+  int ageInTenYears;
+
+    System.out.print("What is your first name?");
+     firstName = keyboard.nextLine();
+ 
+
+   System.out.print("What is your last name?");
+     lastName = keyboard.nextLine();
+
+
+    System.out.print("What is your age?");
+      ageOfUser = keyboard.nextInt();
+      ageInTenYears = ageOfUser + 10;
+
+
+   System.out.println("Hello,"+ firstName+ " " + lastName + "!");
+  System.out.printf("Do you like being %d years old?\n",ageOfUser);
+  System.out.printf("You know, in 10 years, you will be %d years old.\n", ageInTenYears);
+  System.out.printf("Hey is it OK if i call you \"%s?\n", firstName);
+
+
+  }
+}

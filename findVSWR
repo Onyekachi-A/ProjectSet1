@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class FindVSWR 
+{
+	static Scanner keyboard = new Scanner(System.in);
+	public static void main (String [] args)
+	{
+		
+	//identifying the variables
+	double forwardV; 
+	double reverseV;
+	double VSWR;
+		
+	//User inputs fowardV
+	System.out.print("Enter forward voltage: ");
+	forwardV = keyboard.nextDouble();
+	keyboard.nextLine();
+		
+	//User inputs reverseV
+	System.out.print("Enter reverse voltage: ");
+	reverseV = keyboard.nextDouble();
+	keyboard.nextLine();
+		
+	//Formula for VSWR
+	VSWR = (forwardV + reverseV) / (forwardV - reverseV);
+		
+	System.out.printf("VSWR: %4.2f \n", VSWR);
+		
+	}
+}
